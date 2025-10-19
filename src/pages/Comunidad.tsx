@@ -3,6 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Users, Calendar, Heart, Globe } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const Comunidad = () => {
   const associations = [
@@ -73,12 +75,30 @@ const Comunidad = () => {
     }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Latinos en Elche - Comunidad",
+    "description": "Comunidad latina en Elche: asociaciones, eventos culturales y grupos de apoyo",
+    "url": "https://latinosenelche.es/comunidad",
+    "sameAs": [
+      "https://www.facebook.com/groups/167509320309197"
+    ]
+  };
+
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Comunidad Latina en Elche"
+        description="Conecta con la comunidad latina en Elche: asociaciones, eventos culturales, grupos de Facebook y WhatsApp. Más de 2,300 latinos compartiendo experiencias y ayudándose."
+        canonical="https://latinosenelche.es/comunidad"
+        structuredData={structuredData}
+      />
       <Navbar />
       
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
+          <Breadcrumbs items={[{ label: "Comunidad Latina" }]} />
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Comunidad Latina en Elche

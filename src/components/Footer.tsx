@@ -38,13 +38,18 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/comunidad" className="text-muted-foreground hover:text-primary">
-                  Asociaciones
+                  Comunidad Latina
                 </Link>
               </li>
               <li>
-                <Link to="/eventos" className="text-muted-foreground hover:text-primary">
-                  Eventos
-                </Link>
+                <a 
+                  href="https://www.facebook.com/groups/167509320309197" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary"
+                >
+                  Grupo Facebook
+                </a>
               </li>
             </ul>
           </div>

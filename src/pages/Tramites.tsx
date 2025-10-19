@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { FileText, Clock, AlertCircle, CheckCircle2, ExternalLink } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const Tramites = () => {
   const procedures = [
@@ -91,12 +93,38 @@ const Tramites = () => {
     }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo hacer trámites de extranjería en Elche",
+    "description": "Guía completa para obtener NIE, arraigo social, reagrupación familiar y nacionalidad española en Elche",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Obtener el NIE",
+        "text": "Solicitar cita previa, rellenar formulario EX-15, reunir documentación y acudir a Comisaría"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Tramitar Arraigo Social",
+        "text": "Demostrar 3 años en España, conseguir contrato de trabajo, obtener informe de integración y presentar solicitud"
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Guía de Trámites para Extranjeros en Elche"
+        description="Guía completa de trámites de extranjería en Elche: NIE, arraigo social, reagrupación familiar y nacionalidad española. Pasos, documentos y consejos prácticos."
+        canonical="https://latinosenelche.es/tramites"
+        structuredData={structuredData}
+      />
       <Navbar />
       
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
+          <Breadcrumbs items={[{ label: "Trámites y Documentación" }]} />
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Guía de Trámites para Extranjeros en Elche

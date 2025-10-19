@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Home, FileText, Briefcase, Users, GraduationCap, Heart, PartyPopper } from "lucide-react";
+import { Home, FileText, Briefcase, Users, PartyPopper } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import elchePanorama from "@/assets/elche-panorama.webp";
 import { useEffect, useState } from "react";
 
@@ -43,23 +44,30 @@ const HomePage = () => {
       title: "Comunidad Latina",
       description: "Conecta con otros latinos, asociaciones y eventos culturales.",
       href: "/comunidad"
-    },
-    {
-      icon: GraduationCap,
-      title: "Educación",
-      description: "Colegios, universidad y homologación de títulos.",
-      href: "/educacion"
-    },
-    {
-      icon: Heart,
-      title: "Salud",
-      description: "Accede al sistema sanitario español y encuentra médicos.",
-      href: "/salud"
     }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Latinos en Elche",
+    "description": "Guía completa para latinos en Elche: información sobre barrios, trámites de extranjería, empleo y comunidad latina",
+    "url": "https://latinosenelche.es",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://latinosenelche.es/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Guía completa para vivir en Elche"
+        description="Guía completa para latinos en Elche: información sobre barrios, trámites de extranjería, empleo y comunidad latina. Todo lo necesario para vivir en Elche, España."
+        canonical="https://latinosenelche.es/"
+        structuredData={structuredData}
+      />
       <Navbar />
       
       <main>

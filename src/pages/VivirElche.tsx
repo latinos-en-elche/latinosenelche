@@ -3,6 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Euro, Home, Palmtree } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const VivirElche = () => {
   const neighborhoods = [
@@ -59,12 +61,42 @@ const VivirElche = () => {
     { item: "Comida fuera (menú del día)", cost: "10-15€" }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta vivir en Elche?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El coste de vida mensual en Elche para una persona ronda entre 800-1,200€, incluyendo alquiler (500-800€), compra (200-300€), transporte (40€), servicios (80-120€) e internet (30-50€)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuáles son los mejores barrios para vivir en Elche?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los barrios más recomendados para latinos son: Centro (vida urbana), Altabix (familiar con buenas escuelas), Carrús (económico con mucha comunidad latina), Toscar (residencial y tranquilo), y Sector V (moderno con servicios completos)."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Vivir en Elche: Guía Completa 2025"
+        description="Descubre los mejores barrios para vivir en Elche, coste de vida actualizado y cómo alquilar piso. Guía completa para latinos que quieren mudarse a Elche, España."
+        canonical="https://latinosenelche.es/vivir-elche"
+        structuredData={structuredData}
+      />
       <Navbar />
       
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
+          <Breadcrumbs items={[{ label: "Vivir en Elche" }]} />
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Vivir en Elche: Guía Completa 2025

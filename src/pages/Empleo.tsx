@@ -3,6 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Briefcase, TrendingUp, Building2, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const Empleo = () => {
   const sectors = [
@@ -45,12 +47,30 @@ const Empleo = () => {
     { name: "Milanuncios", url: "https://www.milanuncios.com", description: "Ofertas locales variadas" }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Trabajar en Elche siendo extranjero - Guía 2025",
+    "description": "Sectores con más demanda laboral, requisitos para trabajar y portales de empleo en Elche",
+    "author": {
+      "@type": "Organization",
+      "name": "Latinos en Elche"
+    }
+  };
+
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Trabajar en Elche siendo extranjero"
+        description="Guía completa sobre empleo en Elche para extranjeros: sectores con demanda, requisitos legales, portales de empleo y consejos para conseguir trabajo en España."
+        canonical="https://latinosenelche.es/empleo"
+        structuredData={structuredData}
+      />
       <Navbar />
       
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
+          <Breadcrumbs items={[{ label: "Empleo" }]} />
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Trabajar en Elche siendo extranjero
