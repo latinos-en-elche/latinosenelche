@@ -63,8 +63,8 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Guía completa para vivir en Elche"
-        description="Guía completa para latinos en Elche: información sobre barrios, trámites de extranjería, empleo y comunidad latina. Todo lo necesario para vivir en Elche, España."
+        title="Guía Completa para Latinos 2025"
+        description="Descubre cómo vivir, trabajar y prosperar en Elche. Información sobre barrios, trámites, empleo y comunidad latina. +2,300 miembros te esperan."
         canonical="https://latinosenelche.es/"
         structuredData={structuredData}
       />

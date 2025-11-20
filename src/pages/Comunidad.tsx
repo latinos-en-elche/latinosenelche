@@ -89,8 +89,8 @@ const Comunidad = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Comunidad Latina en Elche"
-        description="Conecta con la comunidad latina en Elche: asociaciones, eventos culturales, grupos de Facebook y WhatsApp. Más de 2,300 latinos compartiendo experiencias y ayudándose."
+        title="Comunidad Latina en Elche: +2,300 Miembros"
+        description="Únete a 2,300+ latinos en Elche. Grupos de Facebook y WhatsApp, eventos culturales, asociaciones de apoyo. Conecta, comparte y crece juntos."
         canonical="https://latinosenelche.es/comunidad"
         structuredData={structuredData}
       />

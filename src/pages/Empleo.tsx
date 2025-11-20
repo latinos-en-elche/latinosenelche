@@ -61,8 +61,8 @@ const Empleo = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Trabajar en Elche siendo extranjero"
-        description="Guía completa sobre empleo en Elche para extranjeros: sectores con demanda, requisitos legales, portales de empleo y consejos para conseguir trabajo en España."
+        title="Trabajo en Elche para Extranjeros 2025"
+        description="Ofertas de empleo en Elche: calzado, hostelería, construcción. Requisitos, portales de trabajo y sectores con alta demanda para latinos."
         canonical="https://latinosenelche.es/empleo"
         structuredData={structuredData}
       />
