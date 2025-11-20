@@ -115,8 +115,8 @@ const Tramites = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Guía de Trámites para Extranjeros en Elche"
-        description="Guía completa de trámites de extranjería en Elche: NIE, arraigo social, reagrupación familiar y nacionalidad española. Pasos, documentos y consejos prácticos."
+        title="NIE, Arraigo y Trámites de Extranjería Elche 2025"
+        description="Cómo obtener NIE, arraigo social y reagrupación familiar en Elche. Guía con documentos, plazos y pasos detallados para extranjeros."
         canonical="https://latinosenelche.es/tramites"
         structuredData={structuredData}
       />

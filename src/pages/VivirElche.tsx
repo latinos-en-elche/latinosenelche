@@ -87,8 +87,8 @@ const VivirElche = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Vivir en Elche: Guía Completa 2025"
-        description="Descubre los mejores barrios para vivir en Elche, coste de vida actualizado y cómo alquilar piso. Guía completa para latinos que quieren mudarse a Elche, España."
+        title="Vivir en Elche: Mejores Barrios y Precios 2025"
+        description="Mejores barrios para vivir en Elche: Centro, Altabix, Carrús. Alquileres desde 400€. Guía completa con precios, servicios y consejos para latinos."
         canonical="https://latinosenelche.es/vivir-elche"
         structuredData={structuredData}
       />
