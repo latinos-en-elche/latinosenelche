@@ -205,18 +205,22 @@ const HomePage = () => {
         {/* Stats Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="grid gap-8 md:grid-cols-3">
+            <div className="grid gap-8 md:grid-cols-4">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">245.557</div>
+                <div className="text-4xl font-bold text-primary mb-2">242.317</div>
                 <div className="text-muted-foreground">Habitantes en Elche</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-secondary mb-2">15%</div>
+                <div className="text-4xl font-bold text-secondary mb-2">17,2%</div>
                 <div className="text-muted-foreground">Población extranjera</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-accent mb-2">300+</div>
-                <div className="text-muted-foreground">Días de sol al año</div>
+                <div className="text-4xl font-bold text-accent mb-2">41.700</div>
+                <div className="text-muted-foreground">Residentes de otros países</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-primary mb-2">200.000+</div>
+                <div className="text-muted-foreground">Palmeras (Patrimonio UNESCO)</div>
               </div>
             </div>
           </div>
