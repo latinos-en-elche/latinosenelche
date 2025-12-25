@@ -207,7 +207,7 @@ const HomePage = () => {
           <div className="container mx-auto px-4">
             <div className="grid gap-8 md:grid-cols-3">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">232,000</div>
+                <div className="text-4xl font-bold text-primary mb-2">245.557</div>
                 <div className="text-muted-foreground">Habitantes en Elche</div>
               </div>
               <div className="text-center">
