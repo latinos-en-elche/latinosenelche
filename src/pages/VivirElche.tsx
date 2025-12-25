@@ -118,7 +118,7 @@ const VivirElche = () => {
             <CardContent className="space-y-4">
               <p>
                 Elche es la tercera ciudad más grande de la Comunidad Valenciana y una de las mejores 
-                opciones para latinos que buscan establecerse en España. Con más de 245.000 habitantes, 
+                opciones para latinos que buscan establecerse en España. Con más de 242.000 habitantes, 
                 cuenta con una comunidad latina establecida y acogedora.
               </p>
               <div className="grid md:grid-cols-2 gap-4 mt-4">
