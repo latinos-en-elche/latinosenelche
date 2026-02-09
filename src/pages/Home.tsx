@@ -85,6 +85,7 @@ const HomePage = () => {
               src={elchePanorama} 
               alt="Panorámica de Elche - Basílica de Santa María y palmeral"
               className="w-full h-[calc(100%+200px)] object-cover"
+              fetchPriority="high"
             />
             {/* Overlay for better text readability */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
