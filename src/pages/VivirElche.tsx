@@ -87,7 +87,7 @@ const VivirElche = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Vivir en Elche: Mejores Barrios y Precios 2025"
+        title="Vivir en Elche: Barrios y Precios 2025"
         description="Mejores barrios para vivir en Elche: Centro, Altabix, Carrús. Alquileres desde 400€. Guía completa con precios, servicios y consejos para latinos."
         canonical="https://latinosenelche.es/vivir-elche"
         structuredData={structuredData}
@@ -108,6 +108,7 @@ const VivirElche = () => {
           </div>
 
           {/* Por qué Elche */}
+          <h2 className="sr-only">¿Por qué elegir Elche?</h2>
           <Card className="mb-8">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
