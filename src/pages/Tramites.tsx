@@ -115,7 +115,7 @@ const Tramites = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="NIE, Arraigo y Trámites de Extranjería Elche 2025"
+        title="NIE y Trámites de Extranjería 2025"
         description="Cómo obtener NIE, arraigo social y reagrupación familiar en Elche. Guía con documentos, plazos y pasos detallados para extranjeros."
         canonical="https://latinosenelche.es/tramites"
         structuredData={structuredData}
@@ -135,6 +135,7 @@ const Tramites = () => {
           </div>
 
           {/* Advertencia importante */}
+          <h2 className="sr-only">Información importante</h2>
           <Card className="mb-8 border-accent">
             <CardHeader>
               <div className="flex items-start gap-3">
@@ -160,6 +161,7 @@ const Tramites = () => {
           </Card>
 
           {/* Trámites principales */}
+          <h2 className="sr-only">Trámites principales</h2>
           <div className="space-y-6">
             {procedures.map((procedure, index) => (
               <Card key={index} className={procedure.needsLawyer ? "border-primary" : ""}>
@@ -243,6 +245,7 @@ const Tramites = () => {
           </div>
 
           {/* Oficinas útiles */}
+          <h2 className="sr-only">Oficinas útiles</h2>
           <Card className="mt-8">
             <CardHeader>
               <CardTitle>Oficinas y contactos útiles</CardTitle>

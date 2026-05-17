@@ -1,0 +1,11 @@
+# Latinos en Elche
+
+> Guía completa para latinos que quieren vivir, trabajar y prosperar en Elche, España. Información sobre barrios, trámites de extranjería, empleo y comunidad latina.
+
+## Pages
+
+- [Inicio](/): Bienvenida y resumen de recursos para latinos en Elche.
+- [Vivir en Elche](/vivir-elche): Mejores barrios, precios de alquiler y coste de vida.
+- [Trámites](/tramites): Guías paso a paso de NIE, arraigo social, reagrupación familiar y nacionalidad.
+- [Empleo](/empleo): Sectores con demanda, portales de empleo y consejos para trabajar en España.
+- [Comunidad](/comunidad): Asociaciones, eventos, restaurantes latinos y grupos de apoyo.

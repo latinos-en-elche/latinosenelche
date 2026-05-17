@@ -10,7 +10,7 @@ interface SEOProps {
 
 const SEO = ({ title, description, canonical, ogImage, structuredData }: SEOProps) => {
   const fullTitle = `${title} | Latinos en Elche`;
-  const defaultOgImage = "https://latinosenelche.es/favicon.png";
+  const defaultOgImage = "https://latinosenelche.es/og-image.png";
   
   return (
     <Helmet>

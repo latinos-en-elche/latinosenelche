@@ -89,7 +89,7 @@ const Comunidad = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Comunidad Latina en Elche: +2,300 Miembros"
+        title="Comunidad Latina en Elche"
         description="Únete a 2,300+ latinos en Elche. Grupos de Facebook y WhatsApp, eventos culturales, asociaciones de apoyo. Conecta, comparte y crece juntos."
         canonical="https://latinosenelche.es/comunidad"
         structuredData={structuredData}
@@ -109,6 +109,7 @@ const Comunidad = () => {
           </div>
 
           {/* Intro */}
+          <h2 className="sr-only">Una comunidad acogedora</h2>
           <Card className="mb-8">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">

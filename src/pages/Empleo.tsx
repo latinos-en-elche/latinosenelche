@@ -81,6 +81,7 @@ const Empleo = () => {
           </div>
 
           {/* Requisitos básicos */}
+          <h2 className="sr-only">Requisitos para trabajar en España</h2>
           <Card className="mb-8 border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
