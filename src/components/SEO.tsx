@@ -1,5 +1,8 @@
-import helmetPkg from 'react-helmet-async';
-const { Helmet } = helmetPkg;
+import * as helmetExports from "react-helmet-async";
+// CJS/ESM interop: SSR resolves the CJS build (default export only), the client
+// build resolves the ESM build (named exports only).
+const helmetResolved = ((helmetExports as unknown as { default?: typeof helmetExports }).default ?? helmetExports) as typeof helmetExports;
+const { Helmet } = helmetResolved;
 
 interface SEOProps {
   title: string;
