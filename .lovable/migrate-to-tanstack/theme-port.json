@@ -1,0 +1,19 @@
+{
+  "customizations": [
+    { "token": "--radius: 0.5rem", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--primary: 197 71% 35%", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--primary-foreground: 0 0% 100%", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--secondary: 27 87% 45%", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--secondary-foreground: 0 0% 100%", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--accent: 351 95% 48%", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--accent-foreground: 0 0% 100%", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--muted: 220 14% 96%", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--muted-foreground: 220 9% 40%", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--destructive-foreground: 0 0% 100%", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--border/--input: 220 13% 91%", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--ring: 197 71% 52%", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--foreground: 240 10% 3.9% (+card/popover)", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "dark-mode palette (full .dark block)", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "sidebar tokens (light + dark)", "source": "src/index.css", "reappliedIn": "src/styles.css" }
+  ]
+}

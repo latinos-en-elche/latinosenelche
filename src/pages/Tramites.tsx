@@ -216,7 +216,7 @@ const Tramites = () => {
                     <ul className="grid md:grid-cols-2 gap-2">
                       {procedure.documents.map((doc, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm">
-                          <div className="rounded-sm bg-muted p-1 mt-0.5">
+                          <div className="rounded-xs bg-muted p-1 mt-0.5">
                             <div className="h-1.5 w-1.5 rounded-full bg-foreground"></div>
                           </div>
                           <span className="text-muted-foreground">{doc}</span>
